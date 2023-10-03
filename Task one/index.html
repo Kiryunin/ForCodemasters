@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task one</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <form class="form" method="">
+        <fieldset class="fieldset">
+            <legend><h1>Forms</h1></legend>
+
+            <div class="wrapper">
+                <div class="wrapper_registration">
+                    <div class="wrapper_registration_title"><h2>Your registration information</h2></div>
+                    <div class="wrapper_registration_input">
+                        <label for="fisrt name">First name</label>
+                        <input class="input" type="text" name="first name" id="firstName" required placeholder="Enter the first name">
+                    </div>
+                    <div class="wrapper_registration_input">
+                        <label for="second name">Second name</label>
+                        <input class="input" type="text" name="second name" id="secondName" required placeholder="Enter the second name">
+                    </div>
+                    <div class="wrapper_registration_input">
+                        <label for="email">Email</label>
+                        <input class="input" type="email" name="email" id="email" required placeholder="Enter the email">
+                    </div>
+                    <div class="wrapper_registration_input">
+                        <label for="number">Number</label>
+                        <input class="phone" type="phone" name="number" id="number" max="22" pattern="^\+7[1-9]{10}$" required placeholder="Enter the number">
+                    </div>
+                    <div class="wrapper_registration_input">
+                        <label for="number">Password</label>
+                        <input class="input" type="password" name="password" id="password" minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required placeholder="Enter the password">
+                    </div>
+                </div>
+
+                <div class="wrapper_profile">
+                    <div class="wrapper_title"><h2>Your profile</h2></div>
+                    <div class="wrapper_profile equalization">
+                        <div class="wrapper_profile_sex">
+                            <label class="wrapper_profile_sex-title" for="sex">Sex:</label>
+                            <div class="wrapper_profile_sex_radio"><input type="radio" id="sex" name="user_sex" value="man"><label for="man">man</label></div>
+                            <div class="wrapper_profile_sex_radio"><input type="radio" id="sex" name="user_sex" value="woman"><label for="woman">woman</label></div>
+                        </div>
+        
+                        <div class="wrapper_profile_knowledge">
+                            <label class="wrapper_profile_knowledge_title" for="knowledge">Knowledge:</label>
+                            <div class="wrapper_profile_knowledge_checkbox"><input type="checkbox" id="knowledgeHtml" value="html" name="knowledge">HTML</div>
+                            <div class="wrapper_profile_knowledge_checkbox"><input type="checkbox" id="knowledgeCss" value="css" name="knowledge">CSS</div>
+                            <div class="wrapper_profile_knowledge_checkbox"><input type="checkbox" id="knowledgeJs" value="js" name="knowledge">JavsScript</div>
+                            <div class="wrapper_profile_knowledge_checkbox"><input type="checkbox" id="knowledgeFramework" value="framework" name="knowledge">Framework</div>
+                        </div>
+    
+                        <div class="wrapper_profile_country">
+                            <label class="wrapper_profile_country_title" for="select">Country:</label>
+                            <div class="wrapper_profile_country_select">
+                                <select name="select country" id="selectCountry">
+                                    <option value="russia">Russia</option>
+                                    <option value="finland">Finland</option>
+                                    <option value="iceland">Iceland</option>
+                                    <option value="usa">France</option>
+                                    <option value="france">USA</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea class="textarea" name="biography" id="biography" cols="60" rows="5" placeholder="Enter the biography"></textarea>
+                </div>
+
+                <div class="wrapper_buttons">
+                    <button class="button" type="submit">Submit</button>
+                    <button class="button" type="reset">Reset</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="embedded_resources">
+
+        <div class="embedded_resources_wrapper">
+            <div class="embedded_resources_wrapper_images_soup">
+                <img src="src/img/borsh.jpeg" width="320px" height="240px" alt="Фото борща">
+            <h3>Картинка из папки</h3>
+            </div>
+            <div class="embedded_resources_wrapper_images_soup">
+                <img src="https://food.pibig.info/uploads/posts/2023-08/1693498703_food-pibig-info-p-sirnii-sup-na-bulone-instagram-5.jpg" alt="Фото сырного супа">
+            <h3>Картинка через ссылку</h3>
+            </div>
+            <div class="embedded_resources_wrapper_images_icons">
+                <div class="embedded_resources_images_icons">
+                    <img src="src/img/суп 48px.png" width="48px" height="48px" alt="Фото борща">
+                <h3>Иконка 48 пикселей</h3>
+                </div>
+                <div class="embedded_resources_wrapper_images_icons">
+                    <img src="src/img/суп 96px.png" width="96px" height="96px" alt="Фото борща">
+                <h3>Иконка 96 пикселей</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="embedded_resources_wrapper_videos">
+            <div class="embedded_resources_wrapper_video">
+                <iframe width="500" height="450" src="https://www.youtube.com/embed/PW0HJA--XyM?si=1vQNSnII7_S11aTx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Видео с ютуба</h3>
+            </div>
+            <div class="embedded_resources_wrapper_video">
+                <video src="video/myFriend.MOV" width="250" height="450" type="MOV" controls></video>
+                <h3>Видео из папки</h3>
+            </div>
+        </div>
+
+
+        <div class="embedded_resources_wrapper_sound">
+            <div class="embedded_resources_wrapper_sound_music">
+                <audio src="sound/o-privet.mp3" controls></audio>
+                <audio src="sound/brue.mp3" controls></audio>
+                <audio src="sound/nu-che-narod-pognali.mp3" controls></audio>
+            </div>
+            <div class="embedded_resources_wrapper_sound_title"><h3 class="title_sound">Аудио</h3></div>
+        </div>
+
+        <div class="embedded_resources_wrapper_svg">
+            <div class="embedded_resources_wrapper_svg_img">
+                <img src="src/img/403695.svg" alt="svg картинка">
+                <h3>Картинка SVG</h3>
+            </div>
+        </div>
+
+        <div class="embedded_resources_wrapper_maps">
+           <div class="embedded_resources_wrapper_maps_map"> 
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A157df6806328ff80a7e78edd866eed6d679dba28cbb51457ab48a75f77eb422a&amp;source=constructor" width="600" height="240" frameborder="0"></iframe>
+                </iframe>
+                <h3><i>Офис Codemasters в саранске</i></h3>
+           </div>
+        </div>
+
+    </div>
+</body>
+</html>

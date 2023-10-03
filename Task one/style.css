@@ -1,0 +1,203 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  /* border: 1px solid black; */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, input {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* minimal css */
+
+/*              ФОРМА               */
+
+
+h3{
+    text-align: center;
+}
+.form{
+    width: 40%;
+    margin: 0 auto;
+}
+.fieldset{
+    border-radius: 10px;
+    background: #e0e0e2;
+}
+.wrapper{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* обертка всей формы */
+
+.wrapper_registration{
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    justify-content: space-between;
+}
+.input, .phone{
+    height: 25px;
+    border-radius: 10px;
+}
+.wrapper_registration_input{
+    display: flex;
+    flex-direction: column;
+}
+/* обертка регистрации */
+
+.wrapper_profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 390px;
+}
+/* обертка данных профиля */
+
+.wrapper_profile_country_title, .wrapper_profile_knowledge_title, .wrapper_profile_sex-title{
+    display: flex;
+    justify-content: center;
+}
+/* отцентрирование заголовков нижних инпутов*/
+
+.wrapper_profile.equalization{
+    display: flex;
+    align-items: flex-start;
+    height: 250px;
+}
+/* обертка нижних интпутов */
+
+.wrapper_registration_title{
+    display: flex;
+    justify-content: center;
+}
+.wrapper_profile_sex{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper_profile_knowledge{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper_profile_country{
+    width: auto;
+}
+.textarea{
+    border-radius: 10px;
+}
+/* обертки радиобоксов, чекбоксов, списка */
+
+.wrapper_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.button{
+    margin-right: 15px;
+    height: 30px;
+    width: 250px;
+    color: white;
+    background: rgb(39, 132, 124);
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.button:hover{
+    transform: scale(1.05);
+}
+.button:last-child{
+    margin-right: 0px;
+}
+/* Кнопки формы */
+
+/*              КОНЕЦ ФОРМЫ               */
+
+/*              ВСТРАИМАЕВЫЕ РЕСУРСЫ               */
+
+.embedded_resources{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 60%;
+    height: 1500px;
+    border: 1px dashed black;
+    background: #e0e0e2;;
+}
+/* обертка встраимаемых ресурсов */
+
+.embedded_resources_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* обертка блоков*/
+
+.embedded_resources_wrapper_images_soup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+}
+/* обертка картинок супа */
+
+.embedded_resources_wrapper_videos{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+}
+/* обертка видео через ссылку */
+
+.embedded_resources_wrapper_video{
+    display: flex;
+    flex-direction: column;
+}
+/* обертка видео из папки */
+
+.embedded_resources_iframe_maps{
+    display: flex;
+    align-items: center;
+}
+/* обертка карты */
+
+.embedded_resources_wrapper_sound_music{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* обертка звуков */
+
+.embedded_resources_wrapper_svg{
+    display: flex;
+    justify-content: center;
+}
+.embedded_resources_wrapper_svg_img{
+    max-width: 50%;
+}
+/*  */
+
+.embedded_resources_wrapper_maps{
+    display: flex;
+    justify-content: center;
+}
+
+/*              КОНЕЦ ВСТРАИМАЕВЫХ РЕСУРСОВ                */
