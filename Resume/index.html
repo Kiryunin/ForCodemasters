@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;800&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <title>My résumé </title>
+    <link rel="shortcut icon" href="src/img/icon/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="title">My resume</div>
+    </header>
+<main>
+        <div id="top" class="main">
+            <div class="PriorityInformation">
+                <figure><img class="MyPhoto" src="src/img/MyPhoto.jpg" alt="Моё фото"><figcaption><i>Моё фото</i></figcaption></figure>
+                <h1 class="MyName">Кирюнин Кирилл Владимирович</h1>
+                <p>Образование: получаю среднее специальное образование,<br>(Программирование в компьютерных системах), 4 курс</p>
+                <p>Дата рождения: 12.10.2004 (18 years old)</p>
+                <p>Город: Саранск</p>
+                <p>Телефон: 8-908-749-XX-XX</p>
+                <p>Email: kirunin1@yandex.com</p>
+            </div>
+            <hr>
+            <div class="KeyIssues">
+                <ul><h2>Ответы на ключевые вопросы</h2>
+                    <li>Cтаж и место работы - стажа работы не имеется</li>
+                    <li>Опыт программирования вне университета - верстал несколько мелких сайтиков по курсам</li>
+                    <li>Уровень английского - A1</li>
+                    <li>Цели посещения курсов - обучится и потенциально работать фронтенд разработчиком</li>
+                    <li>Откуда узнали про курс - от друзей</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="ModulOne">
+                <div class="figureOne">
+                    <p class="WordFO">Профессиональные навыки</p></div>
+                <div class="WordOne">
+                    <ul>
+                        <li>Умение гуглить</li>
+                        <li>Знание HTML и CSS</li>
+                        <li>Базовые знания английского языка</li>
+                        <li>Мастерское владение компьютером</li>
+                        <li>Умение жать от груди 105 килограмм</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ModulTwo">
+                <div class="figureOne">
+                    <p class="WordFT">Личные качества</p></div>
+                <div class="WordOne">
+                    <ul>
+                        <li>Отвественность</li>
+                        <li>Дисциплинированность</li>
+                        <li>Пунктуальность</li>
+                        <li>Коммуникабельность</li>
+                        <li>Организованность</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ModulTwo">
+                <div class="figureOne">
+                    <p class="WordFT">Доп. информация</p></div>
+                <div class="WordThree">
+                    <ul>
+                        <li>Холостой патрон)</li>
+                        <li>Имею права на категорию машин B</li>
+                        <li>Изучаю экономику</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#top"><div class="ButtonUp">&uarr;</div></a>
+        </main>
+</main>
+    <footer class="footer">
+        <ul class="links">
+            <li class="link"><a target="_blank" href="https://vk.com/kirunin1"><img src="src/img/icon/icons8-vk-48.png" alt=""></a></li>
+            <li class="link"><a target="_blank" href="https://t.me/cirios"><img src="src/img/icon/icons8-телеграмма-app-48.png" alt=""></a></li>
+            <li class="link"><a href=""><img src="src/img/icon/icons8-instagram-48.png" alt=""></a></li><!-- Не сижу в таких местах -->
+        </ul>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $("#top").on("click","a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 750);
+        });
+      });
+      </script>
+</body>
+</html>

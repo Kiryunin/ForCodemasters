@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    background: black;
+}
+header{
+    position: sticky;
+    top: 0;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: white;
+}
+.title{
+    font-size: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+main{
+    background: white;
+    width: 100%;
+}
+.main{
+    background: white;
+    font-family: 'Playfair Display', serif;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: auto;
+    width: 60%;
+}
+.MyPhoto{
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+}
+figure{
+    float: left;
+}
+figcaption{
+    text-align: center;
+}
+hr{
+    width: 650px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.PriorityInformation {
+    /* border: 2px black solid; */
+    height: 450px;
+}
+.KeyIssues{
+    margin: auto;
+    width: 85%;
+    transition: 0.5s;
+}
+.KeyIssues:hover{
+    transform: scale(1.1);
+}
+.ModulOne{
+    margin: auto;
+    width: 85%;
+    transition: 0.5s;
+}
+.ModulOne:hover{
+    transform: scale(1.1);
+}
+.ModulTwo{
+    margin: auto;
+    width: 85%;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.ModulTwo:hover{
+    transform: scale(1.1);
+}
+.figureOne{
+    display: inline-block;
+    border: 2px black solid;
+    height: 150px;
+    width: 370px;
+    border-radius: 15px;
+    vertical-align: top;
+}
+.WordFO{
+    /* border: 2px black solid; */
+    width: 220px;
+    margin-top: 65px;
+    margin-left: 80px;
+}
+.WordFT{
+    /* border: 2px black solid; */
+    width: 220px;
+    margin-top: 65px;
+    margin-left: 120px;
+}
+.WordOne{
+    display: inline-block;
+    /* border: 2px black solid; */
+    width: 400px;
+    vertical-align: top;
+}
+.WordThree{
+    display: inline-block;
+    /* border: 2px black solid; */
+    width: 400px;
+    vertical-align: top;
+    padding-top: 25px;
+}
+.footer{
+    background: #000;
+    border-radius: 10px 10px 0 0;
+    height: 70px;
+    width: 100%;
+}
+.links{
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+.link{
+    display: inline-block;
+    margin: 10px 80px 0 80px; 
+    transition: 0.5s;
+}
+.link:hover{
+    transform: scale(1.3);
+}
+.ButtonUp{
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px black solid;
+    text-align: center;
+    line-height: 40px;
+    font-size: 36px;
+    position: absolute;
+    transition: 0.3s;
+    color: #000;
+}
+.ButtonUp:hover{
+    transform: scale(1.2);
+}
+a{
+    scroll-behavior: smooth; 
+}
