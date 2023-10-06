@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task one</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <form class="form" method="">
@@ -16,23 +16,23 @@
                 <div class="wrapper_registration">
                     <div class="wrapper_registration_title"><h2>Your registration information</h2></div>
                     <div class="wrapper_registration_input">
-                        <label for="fisrt name">First name</label>
-                        <input class="input" type="text" name="first name" id="firstName" required placeholder="Enter the first name">
+                        <label for="fisrtName">First name</label>
+                        <input class="input" type="text" name="firstName" id="firstName" required placeholder="Enter the first name">
                     </div>
                     <div class="wrapper_registration_input">
-                        <label for="second name">Second name</label>
-                        <input class="input" type="text" name="second name" id="secondName" required placeholder="Enter the second name">
+                        <label for="secondName">Second name</label>
+                        <input class="input" type="text" name="secondName" id="secondName" required placeholder="Enter the second name">
                     </div>
                     <div class="wrapper_registration_input">
                         <label for="email">Email</label>
                         <input class="input" type="email" name="email" id="email" required placeholder="Enter the email">
                     </div>
                     <div class="wrapper_registration_input">
-                        <label for="number">Number</label>
-                        <input class="phone" type="phone" name="number" id="number" max="22" pattern="^\+7[1-9]{10}$" required placeholder="Enter the number">
+                        <label for="number">Phone</label>
+                        <input class="phone" type="number" name="phone" id="phone" max="22" pattern="^\+7[1-9]{10}$" required placeholder="Enter the phone">
                     </div>
                     <div class="wrapper_registration_input">
-                        <label for="number">Password</label>
+                        <label for="password">Password</label>
                         <input class="input" type="password" name="password" id="password" minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required placeholder="Enter the password">
                     </div>
                 </div>
@@ -42,8 +42,8 @@
                     <div class="wrapper_profile equalization">
                         <div class="wrapper_profile_sex">
                             <label class="wrapper_profile_sex-title" for="sex">Sex:</label>
-                            <div class="wrapper_profile_sex_radio"><input type="radio" id="sex" name="user_sex" value="man"><label for="man">man</label></div>
-                            <div class="wrapper_profile_sex_radio"><input type="radio" id="sex" name="user_sex" value="woman"><label for="woman">woman</label></div>
+                            <div class="wrapper_profile_sex_radio"><input type="radio" id="sexMan" name="user_sex" value="man"><label for="man">man</label></div>
+                            <div class="wrapper_profile_sex_radio"><input type="radio" id="sexWoman" name="user_sex" value="woman"><label for="woman">woman</label></div>
                         </div>
         
                         <div class="wrapper_profile_knowledge">
@@ -82,7 +82,7 @@
 
         <div class="embedded_resources_wrapper">
             <div class="embedded_resources_wrapper_images_soup">
-                <img src="src/img/borsh.jpeg" width="320px" height="240px" alt="Фото борща">
+                <img src="src/img/borsh.jpeg" alt="Фото боwрща">
             <h3>Картинка из папки</h3>
             </div>
             <div class="embedded_resources_wrapper_images_soup">
@@ -107,7 +107,7 @@
                 <h3>Видео с ютуба</h3>
             </div>
             <div class="embedded_resources_wrapper_video">
-                <video src="video/myFriend.MOV" width="250" height="450" type="MOV" controls></video>
+                <video src="src/video/myFriend.MOV" width="250" height="450" type="MOV" controls></video>
                 <h3>Видео из папки</h3>
             </div>
         </div>
@@ -132,7 +132,6 @@
         <div class="embedded_resources_wrapper_maps">
            <div class="embedded_resources_wrapper_maps_map"> 
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A157df6806328ff80a7e78edd866eed6d679dba28cbb51457ab48a75f77eb422a&amp;source=constructor" width="600" height="240" frameborder="0"></iframe>
-                </iframe>
                 <h3><i>Офис Codemasters в саранске</i></h3>
            </div>
         </div>
