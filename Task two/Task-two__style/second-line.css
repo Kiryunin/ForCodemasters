@@ -1,0 +1,20 @@
+.second-line{
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+.second-line__wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.second-line__consistency{
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+.second-line_link{
+    text-decoration: none;
+    color: #cdcdcd;
+}

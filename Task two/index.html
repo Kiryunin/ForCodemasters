@@ -5,24 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task two</title>
     <link rel="stylesheet" href="../Normalize/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Task-two__style/common-styles.css">
+    <link rel="stylesheet" href="Task-two__style/header.css">
+    <link rel="stylesheet" href="Task-two__style/second-line.css">
+    <link rel="stylesheet" href="Task-two__style/main.css">
+    <link rel="stylesheet" href="Task-two__style/aside.css">
+    <link rel="stylesheet" href="Task-two__style/aside-second.css">
+    <link rel="shortcut icon" href="Task-two__images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a href=""><h1></h1></a>
-        <nav></nav>
-        <a href=""><button></button></a>
-        <input type="text">
-        <a href=""><div></div></a>
-        <a href=""><button></button></a>
-        <div>
-            <a href=""></a>
-            <div>&gt;</div>
-            <a href=""></a>
-            <a href="">Русский</a>
+
+    <!-------------------------------- HEADER AND SECTION -------------------------------->
+
+    <header class="header">
+        <div class="header__wrapper-block">
+            <div class="header__title"><a class="header_link" href="">mdn web docs</a></div>
+            <nav class="header__nav">
+                <div><a class="header_link" href="">References</a></div>
+                <div><a class="header_link" href="">Guides</a></div>
+                <div><a class="header_link" href="">Plus</a></div>
+                <div><a class="header_link" href="">Blog</a></div>
+                <div><a class="header_link" href="">Play</a></div>
+                <div><a class="header_link" href="">AI help</a></div>
+            </nav>
+        </div>
+        <div class="header__wrapper-block block_second">
+            <a href=""><button class="header__theme">Theme</button></a>
+            <input placeholder="search" class="header__input-search" type="text">
+            <a class="header__login-account header_link" href=""><div>Log in</div></a>
+            <a href=""><button class="header__button-sign">Sign up for free</button></a>
         </div>
     </header>
-    <aside>
+    <section class="second-line">
+        <div class="second-line__wrapper">
+            <div class="second-line__consistency">
+                <a class="second-line_link" href="">Веб-технологии для разработчиков</a>
+                <div>&gt;</div>
+                <a class="second-line_link" href="">HTML</a>
+            </div>
+            <div class="second-line__language">
+                <div>Русский</div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------- END HEADER AND SECTION -------------------------------->
+
+    <!-------------------------------- ASIDE -------------------------------->
+
+    <aside class="aside">
         <a href=""><button></button></a>
         <h2>HTML</h2>
         <ul>
@@ -52,26 +83,37 @@
             </ul>
         </ul>
     </aside>
-    <main>
+
+    <!-------------------------------- END ASIDE -------------------------------->
+
+    <!-------------------------------- MAIN -------------------------------->
+
+    <!-- <main class="main">
         <h2>HTML</h2>
         <p>HTML (HyperText Markup Language — «язык гипертекстовой разметки») — самый базовый строительный блок <a href="/">Веба</a>. Он определяет содержание и структуру веб-контента. Другие технологии, помимо HTML, обычно используются для описания внешнего вида/представления (<a href="">CSS</a>) или функциональности/поведения (<a href="">JavaScript</a>) веб-страницы.</p>
         <p>Под гипертекстом ("hypertext") понимаются ссылки, которые соединяют веб-страницы друг с другом либо в пределах одного веб-сайта, либо между веб-сайтами. Ссылки являются фундаментальным аспектом Веба. Загружая контент в Интернет и связывая его со страницами, созданными другими людьми, вы становитесь активным участником Всемирной паутины.</p>
-        <p>HTML использует разметку ("markup") для отображения текста, изображений и другого контента в веб-браузере. HTML-разметка включает в себя специальные "элементы", такие как <a href="">&lt;head&gt;</a>, <a href="">&lt;title&gt;</a>, <a href="">&lt;body&gt;</a>, <a href="">&lt;header&gt;</a>, <a href="">&lt;footer&gt;</a>, <a href="">&lt;aticle&gt;</a>, &<a href="">lt;section&gt;</a>, <a href="">&lt;p&gt;</a>, <a href="">&lt;div&gt;</a>, <a href="">&lt;span&gt;</a>, <a href="">&lt;img&gt;</a>, <a href="">&lt;aside&gt;</a>, <a href="">&lt;audio&gt;</a>, <a href="">&lt;canvas&gt;</a>, <a href="">&lt;datalist&gt;</a>, <a href="">&lt;details&gt;</a>, <a href="">&lt;embed&gt;</a>, <a href="">&lt;nav&gt;</a href>, <a href="">&lt;output&gt;</a>, <a href="">&lt;progress&gt;</a>, <a href="">&lt;video&gt;</a> и многие другие.</p>
+        <p>HTML использует разметку ("markup") для отображения текста, изображений и другого контента в веб-браузере. HTML-разметка включает в себя специальные "элементы", такие как <a href="">&lt;head&gt;</a>, <a href="">&lt;title&gt;</a>, <a href="">&lt;body&gt;</a>, <a href="">&lt;header&gt;</a>, <a href="">&lt;footer&gt;</a>, <a href="">&lt;aticle&gt;</a>, <a href="">&lt;section&gt;</a>, <a href="">&lt;p&gt;</a>, <a href="">&lt;div&gt;</a>, <a href="">&lt;span&gt;</a>, <a href="">&lt;img&gt;</a>, <a href="">&lt;aside&gt;</a>, <a href="">&lt;audio&gt;</a>, <a href="">&lt;canvas&gt;</a>, <a href="">&lt;datalist&gt;</a>, <a href="">&lt;details&gt;</a>, <a href="">&lt;embed&gt;</a>, <a href="">&lt;nav&gt;</a href>, <a href="">&lt;output&gt;</a>, <a href="">&lt;progress&gt;</a>, <a href="">&lt;video&gt;</a> и многие другие.</p>
         <p>HTML-элемент выделяется из прочего текста в документе с помощью "тегов", которые состоят из имени элемента окружённого "&lt;" и "&gt;". Имя элемента внутри тега не чувствительно к регистру. То есть, оно может быть написано в верхнем или нижнем регистре, или смешано. Например, тег &lt;title&gt; может быть записан как &lt;Title&gt;, &lt;TITLE&gt;, или любым другим способом.</p>
         <ul>Статьи, представленные ниже, могут помочь вам больше узнать о HTML.
         <li>Введение в HTML Если вы новичок в веб-разработке, обязательно прочитайте нашу статью <a href="">"Основы HTML"</a>, чтобы узнать, что такое HTML и как его использовать.</li>
         <li>Руководства по HTML Статьи о том, как использовать HTML, а также обучающие материалы и исчерпывающие примеры можно найти в разделе <a href="">"Пространство изучения HTML"</a>.</li>
         <li>Справка по HTML В нашем обширном разделе <a href="">"Справка по HTML"</a> вы найдёте подробности о каждом элементе и атрибуте в HTML.</li>
         </ul>
-    </main>
-    <aside>
+    </main> -->
+<!-------------------------------- END MAIN -------------------------------->
+
+<!-------------------------------- ASIDE SECOND -------------------------------->
+
+    <!-- <aside class="aside aside-second">
         <ul> In this article
             <li>Руководство для начинающих</li>
             <li>Продвинутые темы</li>
             <li>Справочники</li>
             <li>Похожие темы</li>
         </ul>
-    </aside>
+    </aside> -->
+
+    <!-------------------------------- END ASIDE SECOND -------------------------------->
     
 </body>
 </html>
