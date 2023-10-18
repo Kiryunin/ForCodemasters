@@ -4,5 +4,24 @@
 body{
     background: rgb(27, 27, 27);
     color: #cdcdcd;
-    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.wrapper-main-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+.aside{
+    width: 20%;
+}
+.main{
+    width: 55%;
+}
+span{
+    background: #343434;
+    border-radius: 0.25rem;
+    padding: 2px 4px;
 }

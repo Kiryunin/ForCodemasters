@@ -1,0 +1,17 @@
+.main__title{
+    font-size: 40px;
+}
+.main__paragraph{
+    margin: 16px 0 32px 0;
+    line-height: 25px;
+}
+.main__link{
+    color: #8cb4ff;
+}
+.main__list-title{
+    margin: 16px 0 32px;
+}
+.main__list-item{
+    margin: 8px 0;
+    line-height: 1.75;
+}

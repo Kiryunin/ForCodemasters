@@ -1,0 +1,14 @@
+.aside-second__title{
+    margin: 33px 0 16px 0;
+    font-size: 19px;
+}
+.aside-second__list-title{
+    border-left: 1px solid #cdcdcd;
+    padding: 0;
+}
+.aside-second__list-item{
+    padding: 8px 16px;
+    margin: 0;
+    list-style: none;
+    font-size: 13px;
+}

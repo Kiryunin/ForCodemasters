@@ -4,6 +4,7 @@
     align-items: center;
     height: 45px;
     width: 90%;
+    height: 64px;
     margin: 0 auto;
 }
 .header__wrapper-block{
@@ -29,24 +30,27 @@
     border: none;
     font-size: 13px;
     cursor: pointer;
+    font-weight: 600;
 }
 .header__login-account{
     font-size: 13px;
+    font-weight: 600;
 }
 .header__input-search{
     width: 80px;
+    border-radius: 1rem;
+    background: #1b1b1b;
+    border: 1px solid #cdcdcd;
+    color: #cdcdcd;
+    text-align: center;
 }
 .header__button-sign{
     font-size: 13px;
     width: 132px;
     height: 32px;
+    font-weight: 600;
 }
 .header_link{
     text-decoration: none;
     color: white;
-}
-.second-line{
-    display: flex;
-    background: #343434;
-    width: 100%;
 }

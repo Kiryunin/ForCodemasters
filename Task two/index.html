@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="Task-two__style/aside.css">
     <link rel="stylesheet" href="Task-two__style/aside-second.css">
     <link rel="shortcut icon" href="Task-two__images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -53,67 +59,70 @@
 
     <!-------------------------------- ASIDE -------------------------------->
 
-    <aside class="aside">
-        <a href=""><button></button></a>
-        <h2>HTML</h2>
-        <ul>
-            <ul>Уроки
-                <li>Основы HTML</li>
-                <li>Введение в HTML</li>
-                <li>Мультимедиа и встраивание</li>
-                <li>HTML таблицы</li>
+    <div class="wrapper-main-content">
+        <aside class="aside">
+            <a href=""><button class="aside__button-filter">Filter</button></a>
+            <h2 class="aside__title">HTML</h2>
+            <ul class="aside__list-title">Уроки
+                <li class="aside__list-item">Основы HTML</li>
+                <li class="aside__list-item">Введение в HTML</li>
+                <li class="aside__list-item">Мультимедиа и встраивание</li>
+                <li class="aside__list-item">HTML таблицы</li>
             </ul>
-            <ul>Справочники
-                <li>HTML элементы</li>
-                <li>Глобальные атрибуты</li>
-                <li>Атрибуты</li>
-                <li>Типы &lt;input&gt;</li>
+            <ul class="aside__list-title">Справочники
+                <li class="aside__list-item">HTML элементы</li>
+                <li class="aside__list-item">Глобальные атрибуты</li>
+                <li class="aside__list-item">Атрибуты</li>
+                <li class="aside__list-item">Типы &lt;input&gt;</li>
             </ul>
-            <ul>Путеводитель
-                <li>Категории контента</li>
-                <li>Блочные элементы</li>
-                <li>Строчные элементы</li>
-                <li>Режим совместимос (Quirks Mode) и стандартный режим (Standards Mode)</li>
-                <li>Date and time formats used in HTML</li>
-                <li>Валидация ограничений</li>
-                <li>Microdata</li>
-                <li>Microformats</li>
-                <li>Viewport meta tag</li>
-                <li>Разрешение использования изображений из разных источников и canvas</li>
+            <ul class="aside__list-title">Путеводитель
+                <li class="aside__list-item">Категории контента</li>
+                <li class="aside__list-item">Блочные элементы</li>
+                <li class="aside__list-item">Строчные элементы</li>
+                <li class="aside__list-item">Режим совместимос (Quirks Mode) и стандартный режим (Standards Mode)</li>
+                <li class="aside__list-item">Date and time formats used in HTML</li>
+                <li class="aside__list-item">Валидация ограничений</li>
+                <li class="aside__list-item">Microdata</li>
+                <li class="aside__list-item">Microformats</li>
+                <li class="aside__list-item">Viewport meta tag</li>
+                <li class="aside__list-item">Разрешение использования изображений из разных источников и canvas</li>
             </ul>
-        </ul>
-    </aside>
+        </aside>
 
-    <!-------------------------------- END ASIDE -------------------------------->
+        <!-------------------------------- END ASIDE -------------------------------->
 
-    <!-------------------------------- MAIN -------------------------------->
+        <!-------------------------------- MAIN  -------------------------------->
+    
+        <main class="main">
+            <h2 class="main__title">HTML</h2>
+            <p class="main__paragraph">HTML (HyperText Markup Language — «язык гипертекстовой разметки») — самый базовый строительный блок <a class="main__link" href="/">Веба</a>. Он определяет содержание и структуру веб-контента. Другие технологии, помимо HTML, обычно используются для описания внешнего вида/представления (<a class="main__link" href="">CSS</a>) или функциональности/поведения (<a class="main__link" href="">JavaScript</a>) веб-страницы.</p>
+            <p class="main__paragraph">Под гипертекстом ("hypertext") понимаются ссылки, которые соединяют веб-страницы друг с другом либо в пределах одного веб-сайта, либо между веб-сайтами. Ссылки являются фундаментальным аспектом Веба. Загружая контент в Интернет и связывая его со страницами, созданными другими людьми, вы становитесь активным участником Всемирной паутины.</p>
+            <p class="main__paragraph">HTML использует разметку ("markup") для отображения текста, изображений и другого контента в веб-браузере. HTML-разметка включает в себя специальные "элементы", такие как <a class="main__link" href="">&lt;head&gt;</a>, <a class="main__link" href="">&lt;title&gt;</a>, <a class="main__link" href="">&lt;body&gt;</a>, <a class="main__link" href="">&lt;header&gt;</a>, <a class="main__link" href="">&lt;footer&gt;</a>, <a class="main__link" href="">&lt;aticle&gt;</a>, <a class="main__link" href="">&lt;section&gt;</a>, <a class="main__link" href="">&lt;p&gt;</a>, <a class="main__link" href="">&lt;div&gt;</a>, <a class="main__link" href="">&lt;span&gt;</a>, <a class="main__link" href="">&lt;img&gt;</a>, <a class="main__link" href="">&lt;aside&gt;</a>, <a class="main__link" href="">&lt;audio&gt;</a>, <a class="main__link" href="">&lt;canvas&gt;</a>, <a class="main__link" href="">&lt;datalist&gt;</a>, <a class="main__link" href="">&lt;details&gt;</a>, <a class="main__link" href="">&lt;embed&gt;</a>, <a class="main__link" href="">&lt;nav&gt;</a href>, <a class="main__link" href="">&lt;output&gt;</a>, <a class="main__link" href="">&lt;progress&gt;</a>, <a class="main__link" href="">&lt;video&gt;</a> и многие другие.</p>
+            <p class="main__paragraph">HTML-элемент выделяется из прочего текста в документе с помощью "<a class="main__link" href="">тегов</a>", которые состоят из имени элемента окружённого "<span>&lt;</span>" и "<span>&gt;</span>". Имя элемента внутри тега не чувствительно к регистру. То есть, оно может быть написано в верхнем или нижнем регистре, или смешано. Например, тег <span>&lt;title&gt;</span> может быть записан как <span>&lt;Title&gt;</span>, <span>&lt;TITLE&gt;</span>, или любым другим способом.</p>
+            <p class="main__list-title">Статьи, представленные ниже, могут помочь вам больше узнать о HTML.</p>
+            <ul>
+            <li class="main__list-item">Введение в HTML Если вы новичок в веб-разработке, обязательно прочитайте нашу статью <a class="main__link" href="">"Основы HTML"</a>, чтобы узнать, что такое HTML и как его использовать.</li>
+            <li class="main__list-item">Руководства по HTML Статьи о том, как использовать HTML, а также обучающие материалы и исчерпывающие примеры можно найти в разделе <a class="main__link" href="">"Пространство изучения HTML"</a>.</li>
+            <li class="main__list-item">Справка по HTML В нашем обширном разделе <a class="main__link" href="">"Справка по HTML"</a> вы найдёте подробности о каждом элементе и атрибуте в HTML.</li>
+            </ul>
+        </main>
+    
+    <!-------------------------------- END MAIN -------------------------------->
 
-    <!-- <main class="main">
-        <h2>HTML</h2>
-        <p>HTML (HyperText Markup Language — «язык гипертекстовой разметки») — самый базовый строительный блок <a href="/">Веба</a>. Он определяет содержание и структуру веб-контента. Другие технологии, помимо HTML, обычно используются для описания внешнего вида/представления (<a href="">CSS</a>) или функциональности/поведения (<a href="">JavaScript</a>) веб-страницы.</p>
-        <p>Под гипертекстом ("hypertext") понимаются ссылки, которые соединяют веб-страницы друг с другом либо в пределах одного веб-сайта, либо между веб-сайтами. Ссылки являются фундаментальным аспектом Веба. Загружая контент в Интернет и связывая его со страницами, созданными другими людьми, вы становитесь активным участником Всемирной паутины.</p>
-        <p>HTML использует разметку ("markup") для отображения текста, изображений и другого контента в веб-браузере. HTML-разметка включает в себя специальные "элементы", такие как <a href="">&lt;head&gt;</a>, <a href="">&lt;title&gt;</a>, <a href="">&lt;body&gt;</a>, <a href="">&lt;header&gt;</a>, <a href="">&lt;footer&gt;</a>, <a href="">&lt;aticle&gt;</a>, <a href="">&lt;section&gt;</a>, <a href="">&lt;p&gt;</a>, <a href="">&lt;div&gt;</a>, <a href="">&lt;span&gt;</a>, <a href="">&lt;img&gt;</a>, <a href="">&lt;aside&gt;</a>, <a href="">&lt;audio&gt;</a>, <a href="">&lt;canvas&gt;</a>, <a href="">&lt;datalist&gt;</a>, <a href="">&lt;details&gt;</a>, <a href="">&lt;embed&gt;</a>, <a href="">&lt;nav&gt;</a href>, <a href="">&lt;output&gt;</a>, <a href="">&lt;progress&gt;</a>, <a href="">&lt;video&gt;</a> и многие другие.</p>
-        <p>HTML-элемент выделяется из прочего текста в документе с помощью "тегов", которые состоят из имени элемента окружённого "&lt;" и "&gt;". Имя элемента внутри тега не чувствительно к регистру. То есть, оно может быть написано в верхнем или нижнем регистре, или смешано. Например, тег &lt;title&gt; может быть записан как &lt;Title&gt;, &lt;TITLE&gt;, или любым другим способом.</p>
-        <ul>Статьи, представленные ниже, могут помочь вам больше узнать о HTML.
-        <li>Введение в HTML Если вы новичок в веб-разработке, обязательно прочитайте нашу статью <a href="">"Основы HTML"</a>, чтобы узнать, что такое HTML и как его использовать.</li>
-        <li>Руководства по HTML Статьи о том, как использовать HTML, а также обучающие материалы и исчерпывающие примеры можно найти в разделе <a href="">"Пространство изучения HTML"</a>.</li>
-        <li>Справка по HTML В нашем обширном разделе <a href="">"Справка по HTML"</a> вы найдёте подробности о каждом элементе и атрибуте в HTML.</li>
-        </ul>
-    </main> -->
-<!-------------------------------- END MAIN -------------------------------->
+    <!-------------------------------- ASIDE SECOND -------------------------------->
 
-<!-------------------------------- ASIDE SECOND -------------------------------->
-
-    <!-- <aside class="aside aside-second">
-        <ul> In this article
-            <li>Руководство для начинающих</li>
-            <li>Продвинутые темы</li>
-            <li>Справочники</li>
-            <li>Похожие темы</li>
-        </ul>
-    </aside> -->
+        <aside class="aside aside-second">
+            <p class="aside-second__title">In this article</p>
+            <ul class="aside-second__list-title">
+                <li class="aside-second__list-item">Руководство для начинающих</li>
+                <li class="aside-second__list-item">Продвинутые темы</li>
+                <li class="aside-second__list-item">Справочники</li>
+                <li class="aside-second__list-item">Похожие темы</li>
+            </ul>
+        </aside>
+    </div>
 
     <!-------------------------------- END ASIDE SECOND -------------------------------->
-    
+
 </body>
 </html>
