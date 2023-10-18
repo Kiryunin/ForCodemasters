@@ -24,8 +24,8 @@
     <!-------------------------------- HEADER AND SECTION -------------------------------->
 
     <header class="header">
-        <div class="header__wrapper-block">
-            <div class="header__title"><a class="header_link" href="">mdn web docs</a></div>
+        <div class="header__wrapper-block"> <!-- Хорошее наименование и использование БЭМа-->
+            <div class="header__title"><a class="header_link" href="">mdn web docs</a></div> <!-- То что внутри header_link наверное лучше вынести в отдельный блок link, поскольку это относится ко всем ссылкам, а не только к ссылкам в шапке  -->
             <nav class="header__nav">
                 <div><a class="header_link" href="">References</a></div>
                 <div><a class="header_link" href="">Guides</a></div>
@@ -35,14 +35,17 @@
                 <div><a class="header_link" href="">AI help</a></div>
             </nav>
         </div>
+        <!-- second - не лучшее название для блока/элемента/модификатора. Как читающий должен понять, чем отличается 1й блок от второго? + этот модификатор должен относится к header__wrapper-block
+            Более того, это хороший кандидат на вынос в отдельный блок (header-actions, например)
+        -->
         <div class="header__wrapper-block block_second">
-            <a href=""><button class="header__theme">Theme</button></a>
+            <a href=""><button class="header__theme">Theme</button></a> <!-- header__theme-button, header__theme-switch-button будут получше ИМХО-->
             <input placeholder="search" class="header__input-search" type="text">
             <a class="header__login-account header_link" href=""><div>Log in</div></a>
             <a href=""><button class="header__button-sign">Sign up for free</button></a>
         </div>
     </header>
-    <section class="second-line">
+    <section class="second-line"> <!-- Название не очень, выше подробнее писал про это. Внутри БЭМ использован хорошо, за исключением ссылок. Об этом подронее писал в 28 строке-->
         <div class="second-line__wrapper">
             <div class="second-line__consistency">
                 <a class="second-line_link" href="">Веб-технологии для разработчиков</a>
@@ -61,9 +64,9 @@
 
     <div class="wrapper-main-content">
         <aside class="aside">
-            <a href=""><button class="aside__button-filter">Filter</button></a>
+            <a href=""><button class="aside__button-filter">Filter</button></a> <!--Так лучше не делать. Если нужна ссылка которая выглядит как кнопка, значит надо создать модификатор ссылки. В данном случае это не должно быть ссылкой, это инпут у которого внутри икнока есть. Более того, у тега button Нужно всегда явно указывать тип (аттрибут type) во избежания множества проблем -->
             <h2 class="aside__title">HTML</h2>
-            <ul class="aside__list-title">Уроки
+            <ul class="aside__list-title">Уроки <!--Хороший кандидат на вынос в отдельный блок (например, link-list) -->
                 <li class="aside__list-item">Основы HTML</li>
                 <li class="aside__list-item">Введение в HTML</li>
                 <li class="aside__list-item">Мультимедиа и встраивание</li>
@@ -92,7 +95,7 @@
         <!-------------------------------- END ASIDE -------------------------------->
 
         <!-------------------------------- MAIN  -------------------------------->
-    
+
         <main class="main">
             <h2 class="main__title">HTML</h2>
             <p class="main__paragraph">HTML (HyperText Markup Language — «язык гипертекстовой разметки») — самый базовый строительный блок <a class="main__link" href="/">Веба</a>. Он определяет содержание и структуру веб-контента. Другие технологии, помимо HTML, обычно используются для описания внешнего вида/представления (<a class="main__link" href="">CSS</a>) или функциональности/поведения (<a class="main__link" href="">JavaScript</a>) веб-страницы.</p>
@@ -106,12 +109,12 @@
             <li class="main__list-item">Справка по HTML В нашем обширном разделе <a class="main__link" href="">"Справка по HTML"</a> вы найдёте подробности о каждом элементе и атрибуте в HTML.</li>
             </ul>
         </main>
-    
+
     <!-------------------------------- END MAIN -------------------------------->
 
     <!-------------------------------- ASIDE SECOND -------------------------------->
 
-        <aside class="aside aside-second">
+        <aside class="aside aside-second"> <!-- Опять же, название не лучшее. Лучше назвать secondary-aside тогда. В остальном бэм использован хорошо -->
             <p class="aside-second__title">In this article</p>
             <ul class="aside-second__list-title">
                 <li class="aside-second__list-item">Руководство для начинающих</li>
@@ -123,6 +126,8 @@
     </div>
 
     <!-------------------------------- END ASIDE SECOND -------------------------------->
+
+<!--Забыл футер-->
 
 </body>
 </html>

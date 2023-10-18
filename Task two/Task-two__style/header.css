@@ -2,6 +2,7 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    /* Написал в соседнем файле про внешнюю геометрию. Поищи все такие места, я возможно что-то упустил*/
     height: 45px;
     width: 90%;
     height: 64px;
@@ -48,9 +49,9 @@
     font-size: 13px;
     width: 132px;
     height: 32px;
-    font-weight: 600;
+    font-weight: 600; /*Используется 3 раза. Можно вынести в модификатор strong, блока текст.*/
 }
-.header_link{
+.header_link{ /* Писал по поводу этого в html*/
     text-decoration: none;
     color: white;
 }
