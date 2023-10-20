@@ -1,18 +1,26 @@
 .header{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    height: 45px;
-    width: 90%;
     height: 64px;
-    margin: 0 auto;
+    background: rgb(27, 27, 27);
+    max-width: 100%;
+    padding: 0 16px;
+}
+.header_fixed-position{
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .header__wrapper-block{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.block_second{
+.header__actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 350px;
 }
 .header__title{
@@ -23,18 +31,17 @@
     display: flex;
     justify-content: space-between;
     width: 420px;
+    justify-content:space-between;
 }
-.header__theme{
+.header__theme-switch-button{
     background: #1b1b1b;
     color: #cdcdcd;
     border: none;
     font-size: 13px;
     cursor: pointer;
-    font-weight: 600;
 }
 .header__login-account{
     font-size: 13px;
-    font-weight: 600;
 }
 .header__input-search{
     width: 80px;
@@ -48,9 +55,5 @@
     font-size: 13px;
     width: 132px;
     height: 32px;
-    font-weight: 600;
-}
-.header_link{
-    text-decoration: none;
-    color: white;
+    cursor: pointer;
 }

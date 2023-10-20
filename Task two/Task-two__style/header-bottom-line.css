@@ -1,4 +1,4 @@
-.second-line{
+.header-bottom-line{
     margin: 0 0 32px 0;
     display: flex;
     align-items: center;
@@ -9,18 +9,18 @@
     border-bottom: 0.25px solid #cdcdcd;
     border-top: 0.10px solid #cdcdcd;
 }
-.second-line__wrapper{
+.header-bottom-line__wrapper{
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.second-line__consistency{
+.header-bottom-line__consistency{
     display: flex;
     justify-content: space-between;
     width: 330px;
 }
-.second-line_link{
+.header-bottom-line_link{
     text-decoration: none;
     color: #cdcdcd;
 }

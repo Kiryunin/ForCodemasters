@@ -8,11 +8,30 @@ body{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
+.strong{
+    font-weight: 600;
+}
+.link{
+    text-decoration: none;
+    color: #cdcdcd;
+}
+.list-title{
+    padding: 0;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.list-item{
+    margin: 15px 0;
+    font-size: 13px;
+    list-style: none;
+    font-weight: 200;
+}
 .wrapper-main-content{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 90%;
+    max-width: 100%;
+    padding: 0 16px;
 }
 .aside{
     width: 20%;
@@ -20,7 +39,7 @@ body{
 .main{
     width: 55%;
 }
-span{
+.main_designation{
     background: #343434;
     border-radius: 0.25rem;
     padding: 2px 4px;

@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task two</title>
+    <link rel="shortcut icon" href="Task-two__images/favicon_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../Normalize/normalize.css">
     <link rel="stylesheet" href="Task-two__style/common-styles.css">
     <link rel="stylesheet" href="Task-two__style/header.css">
-    <link rel="stylesheet" href="Task-two__style/second-line.css">
+    <link rel="stylesheet" href="Task-two__style/header-bottom-line.css">
     <link rel="stylesheet" href="Task-two__style/main.css">
     <link rel="stylesheet" href="Task-two__style/aside.css">
     <link rel="stylesheet" href="Task-two__style/aside-second.css">
-    <link rel="shortcut icon" href="Task-two__images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Task-two__style/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,39 +22,41 @@
 </head>
 <body>
 
+<!-- ЗАФИКСИРОВАТЬ ШАПКУ И САЙДБАРЫ -->
+
     <!-------------------------------- HEADER AND SECTION -------------------------------->
 
-    <header class="header">
-        <div class="header__wrapper-block">
-            <div class="header__title"><a class="header_link" href="">mdn web docs</a></div>
-            <nav class="header__nav">
-                <div><a class="header_link" href="">References</a></div>
-                <div><a class="header_link" href="">Guides</a></div>
-                <div><a class="header_link" href="">Plus</a></div>
-                <div><a class="header_link" href="">Blog</a></div>
-                <div><a class="header_link" href="">Play</a></div>
-                <div><a class="header_link" href="">AI help</a></div>
-            </nav>
-        </div>
-        <div class="header__wrapper-block block_second">
-            <a href=""><button class="header__theme">Theme</button></a>
-            <input placeholder="search" class="header__input-search" type="text">
-            <a class="header__login-account header_link" href=""><div>Log in</div></a>
-            <a href=""><button class="header__button-sign">Sign up for free</button></a>
-        </div>
-    </header>
-    <section class="second-line">
-        <div class="second-line__wrapper">
-            <div class="second-line__consistency">
-                <a class="second-line_link" href="">Веб-технологии для разработчиков</a>
-                <div>&gt;</div>
-                <a class="second-line_link" href="">HTML</a>
+    <header class="header_fixed-position">
+        <div class="header">
+            <div class="header__wrapper-block">
+                <div class="header__title"><a class="link" href="">mdn web docs</a></div>
+                <nav class="header__nav">
+                    <div><a class="link" href="">References</a></div>
+                    <div><a class="link" href="">Guides</a></div>
+                    <div><a class="link" href="">Plus</a></div>
+                    <div><a class="link" href="">Blog</a></div>
+                    <div><a class="link" href="">Play</a></div>
+                    <div><a class="link" href="">AI help</a></div>
+                </nav>
             </div>
-            <div class="second-line__language">
+            <div class="header__actions">
+                <a href=""><button class="header__theme-switch-button">Theme</button></a>
+                <input placeholder="search" class="header__input-search" type="text">
+                <a class="header__login-account link" href=""><div>Log in</div></a>
+                <a href=""><button class="header__button-sign">Sign up for free</button></a>
+            </div>
+        </div>
+        <section class="header-bottom-line">
+            <div class="header-bottom-line__wrapper">
+                <div class="header-bottom-line__consistency">
+                    <a class="header-bottom-line_link" href="">Веб-технологии для разработчиков</a>
+                    <div>&gt;</div>
+                    <a class="header-bottom-line_link" href="">HTML</a>
+                </div>
                 <div>Русский</div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
 
     <!-------------------------------- END HEADER AND SECTION -------------------------------->
 
@@ -61,31 +64,31 @@
 
     <div class="wrapper-main-content">
         <aside class="aside">
-            <a href=""><button class="aside__button-filter">Filter</button></a>
+            <input class="aside_filter" placeholder="Filter" id="aside_filter" type="text">
             <h2 class="aside__title">HTML</h2>
-            <ul class="aside__list-title">Уроки
-                <li class="aside__list-item">Основы HTML</li>
-                <li class="aside__list-item">Введение в HTML</li>
-                <li class="aside__list-item">Мультимедиа и встраивание</li>
-                <li class="aside__list-item">HTML таблицы</li>
+            <ul class="list-title"><a class="link" href="">Уроки</a>
+                <li class="list-item"><a class="link" href="">Основы HTML</a></li>
+                <li class="list-item"><a class="link" href="">Введение в HTML</a></li>
+                <li class="list-item"><a class="link" href="">Мультимедиа и встраивание</a></li>
+                <li class="list-item"><a  class="link" href="">HTML таблицы</a></li>
             </ul>
-            <ul class="aside__list-title">Справочники
-                <li class="aside__list-item">HTML элементы</li>
-                <li class="aside__list-item">Глобальные атрибуты</li>
-                <li class="aside__list-item">Атрибуты</li>
-                <li class="aside__list-item">Типы &lt;input&gt;</li>
+            <ul class="list-title"><a class="link" href="">Справочники</a>
+                <li class="list-item"><a class="link" href="">HTML элементы</a></li>
+                <li class="list-item"><a  class="link" href="">Глобальные атрибуты</a></li>
+                <li class="list-item"><a  class="link" href="">Атрибуты</a></li>
+                <li class="list-item"><a class="link" href="">Типы &lt;input&gt;</a></li>
             </ul>
-            <ul class="aside__list-title">Путеводитель
-                <li class="aside__list-item">Категории контента</li>
-                <li class="aside__list-item">Блочные элементы</li>
-                <li class="aside__list-item">Строчные элементы</li>
-                <li class="aside__list-item">Режим совместимос (Quirks Mode) и стандартный режим (Standards Mode)</li>
-                <li class="aside__list-item">Date and time formats used in HTML</li>
-                <li class="aside__list-item">Валидация ограничений</li>
-                <li class="aside__list-item">Microdata</li>
-                <li class="aside__list-item">Microformats</li>
-                <li class="aside__list-item">Viewport meta tag</li>
-                <li class="aside__list-item">Разрешение использования изображений из разных источников и canvas</li>
+            <ul class="list-title"><a class="link" href="">Путеводитель</a>
+                <li class="list-item"><a class="link" href="">Категории контента</a></li>
+                <li class="list-item"><a class="link" href="">Блочные элементы</a></li>
+                <li class="list-item"><a class="link" href="">Строчные элементы</a></li>
+                <li class="list-item"><a class="link" href="">Режим совместимос (Quirks Mode) и стандартный режим (Standards Mode)</a></li>
+                <li class="list-item"><a class="link" href="">Date and time formats used in HTML</a></li>
+                <li class="list-item"><a class="link" href="">Валидация ограничений</a></li>
+                <li class="list-item"><a class="link" href="">Microdata</a></li>
+                <li class="list-item"><a class="link" href="">Microformats</a></li>
+                <li class="list-item"><a class="link" href="">Viewport meta tag</a></li>
+                <li class="list-item"><a class="link" href="">Разрешение использования изображений из разных источников и canvas</a></li>
             </ul>
         </aside>
 
@@ -98,7 +101,7 @@
             <p class="main__paragraph">HTML (HyperText Markup Language — «язык гипертекстовой разметки») — самый базовый строительный блок <a class="main__link" href="/">Веба</a>. Он определяет содержание и структуру веб-контента. Другие технологии, помимо HTML, обычно используются для описания внешнего вида/представления (<a class="main__link" href="">CSS</a>) или функциональности/поведения (<a class="main__link" href="">JavaScript</a>) веб-страницы.</p>
             <p class="main__paragraph">Под гипертекстом ("hypertext") понимаются ссылки, которые соединяют веб-страницы друг с другом либо в пределах одного веб-сайта, либо между веб-сайтами. Ссылки являются фундаментальным аспектом Веба. Загружая контент в Интернет и связывая его со страницами, созданными другими людьми, вы становитесь активным участником Всемирной паутины.</p>
             <p class="main__paragraph">HTML использует разметку ("markup") для отображения текста, изображений и другого контента в веб-браузере. HTML-разметка включает в себя специальные "элементы", такие как <a class="main__link" href="">&lt;head&gt;</a>, <a class="main__link" href="">&lt;title&gt;</a>, <a class="main__link" href="">&lt;body&gt;</a>, <a class="main__link" href="">&lt;header&gt;</a>, <a class="main__link" href="">&lt;footer&gt;</a>, <a class="main__link" href="">&lt;aticle&gt;</a>, <a class="main__link" href="">&lt;section&gt;</a>, <a class="main__link" href="">&lt;p&gt;</a>, <a class="main__link" href="">&lt;div&gt;</a>, <a class="main__link" href="">&lt;span&gt;</a>, <a class="main__link" href="">&lt;img&gt;</a>, <a class="main__link" href="">&lt;aside&gt;</a>, <a class="main__link" href="">&lt;audio&gt;</a>, <a class="main__link" href="">&lt;canvas&gt;</a>, <a class="main__link" href="">&lt;datalist&gt;</a>, <a class="main__link" href="">&lt;details&gt;</a>, <a class="main__link" href="">&lt;embed&gt;</a>, <a class="main__link" href="">&lt;nav&gt;</a href>, <a class="main__link" href="">&lt;output&gt;</a>, <a class="main__link" href="">&lt;progress&gt;</a>, <a class="main__link" href="">&lt;video&gt;</a> и многие другие.</p>
-            <p class="main__paragraph">HTML-элемент выделяется из прочего текста в документе с помощью "<a class="main__link" href="">тегов</a>", которые состоят из имени элемента окружённого "<span>&lt;</span>" и "<span>&gt;</span>". Имя элемента внутри тега не чувствительно к регистру. То есть, оно может быть написано в верхнем или нижнем регистре, или смешано. Например, тег <span>&lt;title&gt;</span> может быть записан как <span>&lt;Title&gt;</span>, <span>&lt;TITLE&gt;</span>, или любым другим способом.</p>
+            <p class="main__paragraph">HTML-элемент выделяется из прочего текста в документе с помощью "<a class="main__link" href="">тегов</a>", которые состоят из имени элемента окружённого "<span class="main_designation">&lt;</span>" и "<span class="main_designation">&gt;</span>". Имя элемента внутри тега не чувствительно к регистру. То есть, оно может быть написано в верхнем или нижнем регистре, или смешано. Например, тег <span class="main_designation">&lt;title&gt;</span> может быть записан как <span class="main_designation">&lt;Title&gt;</span>, <span class="main_designation">&lt;TITLE&gt;</span>, или любым другим способом.</p>
             <p class="main__list-title">Статьи, представленные ниже, могут помочь вам больше узнать о HTML.</p>
             <ul>
             <li class="main__list-item">Введение в HTML Если вы новичок в веб-разработке, обязательно прочитайте нашу статью <a class="main__link" href="">"Основы HTML"</a>, чтобы узнать, что такое HTML и как его использовать.</li>
@@ -109,20 +112,82 @@
     
     <!-------------------------------- END MAIN -------------------------------->
 
-    <!-------------------------------- ASIDE SECOND -------------------------------->
-
-        <aside class="aside aside-second">
-            <p class="aside-second__title">In this article</p>
-            <ul class="aside-second__list-title">
-                <li class="aside-second__list-item">Руководство для начинающих</li>
-                <li class="aside-second__list-item">Продвинутые темы</li>
-                <li class="aside-second__list-item">Справочники</li>
-                <li class="aside-second__list-item">Похожие темы</li>
+    <!-------------------------------- ASIDE -------------------------------->
+        <!-- изменить список -->
+        <aside class="aside">
+            <p class="aside_right-content-title">In this article</p>
+            <ul class="list-title list-title_left-border">
+                <li class="list-item list-item_iternal-margin">Руководство для начинающих</li>
+                <li class="list-item list-item_iternal-margin">Продвинутые темы</li>
+                <li class="list-item list-item_iternal-margin">Справочники</li>
+                <li class="list-item list-item_iternal-margin">Похожие темы</li>
             </ul>
         </aside>
     </div>
 
-    <!-------------------------------- END ASIDE SECOND -------------------------------->
+    <!-------------------------------- END SECOND -------------------------------->
+
+    <footer class="footer">
+        <div class="footer__contact-information">
+            <div class="footer__social-network">
+                <h2 class="footer__list-title footer__list-title_bold">mdn</h2>
+                <p class="footer__slogan">Your blueprint for a better internet</p>
+                <div class="footer__social-link">
+                    <img class="footer__icons"src="Task-two__images/icons__twitter.svg" alt="twitter">
+                    <img class="footer__icons"src="Task-two__images/icons__facebook.svg" alt="facebbok">
+                    <img class="footer__icons"src="Task-two__images/icons__github.svg" alt="github">
+                </div>
+            </div>
+            <div class="contact-information__nav">
+                <h2 class="footer__list-title">MDN</h2>
+                <ul class="list-title list-title_footer">
+                    <li class="list-item-footer"><a class="link" href="">About</a></li>
+                    <li class="list-item-footer"><a class="link" href="">Blog</a></li>
+                    <li class="list-item-footer"><a class="link" href="">Carrers</a></li>
+                    <li class="list-item-footer"><a class="link" href="">Aderstise with us</a></li>
+                </ul>
+            </div>      
+            <div class="contact-information__nav">
+                <h2 class="footer__list-title">Support</h2>
+                <ul class="list-title list-title_footer">
+                    <li class="list-item-footer"><a class="link" href="" href="">Product help</a></li>
+                    <li class="list-item-footer"><a class="link" href="" href="">Report ai issue</a></li>
+                </ul>
+            </div>
+            <div class="contact-information__nav">
+                <h2 class="footer__list-title">Our communities</h2>
+                <ul class="list-title list-title_footer">
+                    <li class="list-item-footer"><a class="link" href="">MDN Community</a></li>
+                    <li class="list-item-footer"><a class="link" href="">MDN Forum</a></li>
+                    <li class="list-item-footer"><a class="link" href="">MDN Chat</a></li>
+                </ul>
+            </div>
+            <div class="contact-information">
+                <h2 class="footer__list-title">Developers</h2>
+                <ul class="list-title list-title_footer">
+                    <li class="list-item-footer"><a class="link" href="">Web Technologes</a></li>
+                    <li class="list-item-footer"><a class="link" href="">Learn Web Development</a></li>
+                    <li class="list-item-footer"><a class="link" href="">MDN Plus</a></li>
+                    <li class="list-item-footer"><a class="link" href="">Hacks Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__document">
+            <div class="footer__icon-mozilla">
+                <a class="footer__link-mozilla" href="">moz://a</a>
+            </div>
+                <ul class="footer__document__nav">
+                    <li class="list-item-footer footer__link_small-size"><a class="footer__link" href="">Website Privacy Notice</a></li>
+                    <li class="list-item-footer footer__link_small-size"><a class="footer__link" href="">Cookies</a></li>
+                    <li class="list-item-footer footer__link_small-size"><a class="footer__link" href="">Legal</a></li>
+                    <li class="list-item-footer footer__link_small-size"><a class="footer__link" href="">Communinity Participation Guidelines</a></li>
+                </ul>
+        </div>
+        <div class="footer__rights">
+            <div class="footer_smaill-size">Visit <a class="footer__link" href="">Mozilla Corporation’s</a> not-for-profit parent, the <a class="footer__link" href="">Mozilla Foundation</a>.</div>
+            <div class="footer_smaill-size">Portions of this content are ©1998–2023 by individual mozilla.org contributors. Content available under <a class="footer__link" href="">a Creative Commons license</a>.</div>
+        </div>
+    </footer>
 
 </body>
 </html>
